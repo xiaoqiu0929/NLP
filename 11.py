@@ -53,4 +53,3 @@ mst = parser.parse()
 print("依存树：")
 for dep in mst:
     print(f"{dep[0]} -> {dep[1]}")
-54555
