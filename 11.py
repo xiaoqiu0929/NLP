@@ -49,4 +49,7 @@ weights = np.array([
 parser = GraphBasedDependencyParser(sentence, weights)
 mst = parser.parse()
 
-
+# 输出依存树
+print("依存树：")
+for dep in mst:
+    print(f"{dep[0]} -> {dep[1]}")
